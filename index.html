@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avurudu Nakatha 2026 - ශ්‍රී ලංකා අලුත් අවුරුදු නැකත් චාරිත්‍ර</title>
+    <meta name="description" content="2026 සිංහල හා දෙමළ අලුත් අවුරුදු නැකත් වේලාවන් සහ සජීවී ගණන් කිරීම.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="src/assets/favicon.png" class="fav-icon-image" >
+    <link rel="icon" type="image/png" href="src/assets/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="/"><img src="src/assets/logo-new.png" alt="Grow Digitally Logo" class="logo-img"></a>
+            </div>
+            <div class="current-time-container">
+                <div id="current-date" class="date-text"></div>
+                <div id="current-clock" class="clock-overlay">00:00:00</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-card">
+                    <div class="hero-content">
+                        <div class="badge next-badge">මීළඟ නැකත</div>
+                        <h1 id="next-nakatha-title" class="sinhala-title">පූරණය වෙමින්...</h1>
+                        <p id="next-nakatha-desc" class="description"></p>
+                        
+                        <div class="countdown-wrapper">
+                            <div class="countdown-grid">
+                                <div class="time-box">
+                                    <span id="days" class="time-val">00</span>
+                                    <span class="time-label">දින</span>
+                                </div>
+                                <div class="time-box">
+                                    <span id="hours" class="time-val">00</span>
+                                    <span class="time-label">පැය</span>
+                                </div>
+                                <div class="time-box">
+                                    <span id="minutes" class="time-val">00</span>
+                                    <span class="time-label">මිනිත්තු</span>
+                                </div>
+                                <div class="time-box">
+                                    <span id="seconds" class="time-val">00</span>
+                                    <span class="time-label">තත්පර</span>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-bar-container">
+                                <div id="hero-progress" class="progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="next-details-footer">
+                            <div class="detail-item">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span id="next-nakatha-date">--</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-regular fa-clock"></i>
+                                <span id="next-nakatha-time">--</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="oil_lamp.png" alt="Traditional Lamp" id="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline-section" class="timeline-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="sinhala-subtitle">නැකත් චාරිත්‍ර අනුපිළිවෙල</h2>
+                    <div class="slider-controls">
+                        <button id="prev-btn" class="ctrl-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="next-btn" class="ctrl-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="timeline-slider-wrapper">
+                    <div id="timeline-slider" class="timeline-slider"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="src/assets/logo-new.png" alt="Grow Digitally Logo" class="footer-logo">
+                    <p>Grow Digitally යනු ඔබගේ ව්‍යාපාරික අරමුණු ඉටු කර ගැනීම සඳහා නවීන තාක්ෂණය භාවිතා කරමින් නිර්මාණශීලී විසඳුම් ලබා දෙන ප්‍රමුඛතම ආයතනයකි.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>සබැඳි</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">ගෙදර</a></li>
+                        <li><a href="#">නැකත් පත්‍රය</a></li>
+                        <li><a href="#">චාරිත්‍ර වාරිත්‍ර</a></li>
+                        <li><a href="#">අප ගැන</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>සේවා</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">වෙබ් නිර්මාණ</a></li>
+                        <li><a href="#">ඩිජිටල් අලෙවිකරණය</a></li>
+                        <li><a href="#">මෘදුකාංග සංවර්ධනය</a></li>
+                        <li><a href="#">ග්‍රැෆික් නිර්මාණ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>අපව සම්බන්ධ කර ගන්න</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +94 11 234 5678</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> hello@growdigitally.lk</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> කොළඹ, ශ්‍රී ලංකාව</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2026 Growdigitally.lk. All Rights Reserved</p>
+                    <p class="made-with">Made with ❤️ In Grow Digitally</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

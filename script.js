@@ -26,7 +26,7 @@ const NAKATHA_DATA = [
         title: "ආහාර පිසීම",
         time: "2026-04-14T10:51:00",
         desc: "අප්‍රේල් මස 14 වන අඟහරුවාදා පූර්වභාග 10.51 ට රක්ත වර්ණ වස්ත්රාභරණයෙන් සැරසී දකුණු දිශාව බලා ලිප් බැඳ ගිනි මොළවා කිරිබතක් ද කැවිලි වර්ගයක් ද පිළියෙල කර ගැනීම මැනවි.",
-        image: "src/assets/kiri-Ithirima.jpg"
+        image: "src/assets/kiri-ithireema.jpeg"
     },
     {
         id: "anubhavaya",

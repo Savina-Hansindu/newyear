@@ -65,7 +65,7 @@ function updateClock() {
     const now = new Date();
     const timeString = now.toLocaleTimeString('en-US', { hour12: false });
     const dateString = now.toLocaleDateString('si-LK', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    
+
     document.getElementById('current-clock').textContent = timeString;
     document.getElementById('current-date').textContent = dateString;
 }
@@ -73,12 +73,12 @@ function updateClock() {
 function initTimeline() {
     const slider = document.getElementById('timeline-slider');
     slider.innerHTML = '';
-    
+
     NAKATHA_DATA.forEach((item) => {
         const date = new Date(item.time);
         const timeStr = date.toLocaleTimeString('si-LK', { hour: '2-digit', minute: '2-digit' });
         const dateStr = date.toLocaleDateString('si-LK', { month: 'long', day: 'numeric' });
-        
+
         const card = document.createElement('div');
         card.className = `ritual-card ritual-id-${item.id}`;
         card.dataset.id = item.id;
@@ -91,14 +91,18 @@ function initTimeline() {
                 <span class="status-text">ඉදිරියට</span>
             </div>
         `;
-        
+
         card.addEventListener('click', () => {
             selectedNakathaId = item.id;
             isManualSelection = true;
             updateHeroSection();
             highlightSelectedCard();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // smooth animation
+            });
         });
-        
+
         slider.appendChild(card);
     });
 }
@@ -111,7 +115,7 @@ function highlightSelectedCard() {
 
 function updateHeroSection() {
     const now = new Date();
-    
+
     if (!selectedNakathaId || !isManualSelection) {
         for (let i = 0; i < NAKATHA_DATA.length; i++) {
             if (new Date(NAKATHA_DATA[i].time) > now) {
@@ -122,7 +126,7 @@ function updateHeroSection() {
     }
 
     const nextItem = NAKATHA_DATA.find(i => i.id === selectedNakathaId) || NAKATHA_DATA[NAKATHA_DATA.length - 1];
-    
+
     document.getElementById('next-nakatha-title').textContent = nextItem.title;
     document.getElementById('next-nakatha-desc').textContent = nextItem.desc;
     document.getElementById('next-nakatha-date').textContent = new Date(nextItem.time).toLocaleDateString('si-LK', { weekday: 'long', month: 'long', day: 'numeric' });
@@ -179,7 +183,7 @@ function updateHeroSection() {
     NAKATHA_DATA.forEach((item) => {
         const card = document.querySelector(`.ritual-id-${item.id}`);
         if (!card) return;
-        
+
         const indicator = card.querySelector('.status-indicator');
         const statusText = card.querySelector('.status-text');
         const itemTime = new Date(item.time);

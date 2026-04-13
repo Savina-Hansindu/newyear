@@ -26,7 +26,7 @@ const NAKATHA_DATA = [
         title: "ආහාර පිසීම",
         time: "2026-04-14T10:51:00",
         desc: "අප්‍රේල් මස 14 වන අඟහරුවාදා පූර්වභාග 10.51 ට රක්ත වර්ණ වස්ත්රාභරණයෙන් සැරසී දකුණු දිශාව බලා ලිප් බැඳ ගිනි මොළවා කිරිබතක් ද කැවිලි වර්ගයක් ද පිළියෙල කර ගැනීම මැනවි.",
-        image: "src/assets/kiri ithireema.jpeg"
+        image: "src/assets/kiri-Ithirima.jpg"
     },
     {
         id: "anubhavaya",
@@ -40,14 +40,14 @@ const NAKATHA_DATA = [
         title: "හිසතෙල් ගෑම",
         time: "2026-04-15T06:55:00",
         desc: "අප්‍රේල් මස 15 වන බදාදා පූර්වභාග 6.55 ට පච්ච වර්ණ හෙවත් කොළ පැහැති වස්ත්රාභරණයෙන් සැරසී නැගෙනහිර දිශාව බලා හිසට කොහොඹපත් ද පයට කොළොන් පත් ද තබා තෙල් ගා ස්නානය කිරීම මැනවි.",
-        image: "src/assets/hisathel-gaama.jpeg"
+        image: "src/assets/hisathel-gaama.webp"
     },
     {
         id: "pitathwa-yama",
         title: "රැකී රක්ෂා සඳහා පිටත්ව යෑම",
         time: "2026-04-20T06:27:00",
         desc: "අප්‍රේල් මස 20 වන සඳුදා පූර්වභාග 06.27 ට හෝ 06.50 ට සුදු වර්ණ වස්ත්රාභරණයෙන් සැරසී දකුණු හෝ නැගෙනහිර දිශාව බලා පිටත්ව යෑම මැනවි.",
-        image: "src/assets/rakiyaawa.jpeg"
+        image: "src/assets/raki-raksha.webp"
     },
     {
         id: "situweema",
